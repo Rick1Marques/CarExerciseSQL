@@ -2,9 +2,6 @@ package org.example.backend.entites;
 
 import jakarta.persistence.*;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @Entity
 public class Car {
 
@@ -18,41 +15,46 @@ public class Car {
     @Column(nullable = false)
     private String model;
 
+
+    // @ManyToOne(cascade = CascadeType.ALL)
+    // TODO: search for the CascadeType
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
 
-    public Car(String brand, String model) {
-        this.brand = brand;
-        this.model = model;
+    public Long getId() {
+        return id;
     }
 
-    public Car() {
-
+    public Car setId(Long id) {
+        this.id = id;
+        return this;
     }
 
     public String getBrand() {
         return brand;
     }
 
-    public void setBrand(String brand) {
+    public Car setBrand(String brand) {
         this.brand = brand;
+        return this;
     }
 
     public String getModel() {
         return model;
     }
 
-    public void setModel(String model) {
+    public Car setModel(String model) {
         this.model = model;
+        return this;
     }
 
     public User getUser() {
         return user;
     }
 
-    public void setUser(User user) {
+    public Car setUser(User user) {
         this.user = user;
+        return this;
     }
-
 }

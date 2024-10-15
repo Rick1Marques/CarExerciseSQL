@@ -2,7 +2,9 @@ package org.example.backend.entites;
 
 import jakarta.persistence.*;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "`user`")
@@ -18,40 +20,42 @@ public class User {
     @Column(nullable = false)
     private String lastName;
 
-    @OneToMany
-    private List<Car> cars = new ArrayList<>();
+    @OneToMany(mappedBy = "user")
+    private Set<Car> cars = new HashSet<>();
 
-
-    public User(String fistName, String lastName) {
-        this.fistName = fistName;
-        this.lastName = lastName;
+    public Long getId() {
+        return id;
     }
 
-    public User() {
-
+    public User setId(Long id) {
+        this.id = id;
+        return this;
     }
 
     public String getFistName() {
         return fistName;
     }
 
-    public void setFistName(String fistName) {
+    public User setFistName(String fistName) {
         this.fistName = fistName;
+        return this;
     }
 
     public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
+    public User setLastName(String lastName) {
         this.lastName = lastName;
+        return this;
     }
 
-    public List<Car> getCars() {
+    public Set<Car> getCars() {
         return cars;
     }
 
-    public void setCars(List<Car> cars) {
+    public User setCars(Set<Car> cars) {
         this.cars = cars;
+        return this;
     }
 }
