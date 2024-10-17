@@ -1,5 +1,6 @@
 import {CarCardDto} from "../models/CarCardDto.ts";
-import {Box, Stack} from "@mui/material";
+import {Box, Button, Stack} from "@mui/material";
+import {useNavigate} from "react-router-dom";
 
 
 type CarCardProps = {
@@ -7,6 +8,8 @@ type CarCardProps = {
 }
 
 export default function CarCard({car}: CarCardProps) {
+    const navigate = useNavigate()
+
 
     const {
         brand,
@@ -20,14 +23,18 @@ export default function CarCard({car}: CarCardProps) {
         imageUrl
     } = car;
 
+    function handleClick() {
+        navigate(`/cars/${car.id}`)
+    }
 
     return (
+        <>
         <Stack direction="row">
             <Box>
                 <img src={imageUrl} alt="car" width="300px"/>
             </Box>
             <Stack>
-                <h2>{brand} {model}</h2>
+                <p>{brand} {model}</p>
                 <p>Year: {year}</p>
                 <p>Mileage: {mileage}</p>
                 <p>Transmission: {transmission}</p>
@@ -36,5 +43,7 @@ export default function CarCard({car}: CarCardProps) {
                 <p>Price: {price} €</p>
             </Stack>
         </Stack>
+            <Button onClick={handleClick}>Details</Button>
+        </>
     )
 }

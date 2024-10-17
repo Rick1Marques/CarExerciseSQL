@@ -4,12 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c229154d-1605-48ed-8b31-31601c9f9435" name="Changes" comment="add fake data">
-      <change afterPath="$PROJECT_DIR$/frontend/src/DataFake/FakeData.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/CarCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/pages/CarsPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/models/CarCardDto.ts" afterDir="false" />
+    <list default="true" id="c229154d-1605-48ed-8b31-31601c9f9435" name="Changes" comment="add cars page/card">
+      <change afterPath="$PROJECT_DIR$/frontend/src/DataFake/FakeDataCar.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/DataFake/FakeDataUser.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/UserCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/pages/CarDetailPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/pages/UsersPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/models/car/CarDetailsDto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/models/car/CarInfosUserListCardDto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/models/user/UserCardDto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/models/user/UserOwnerOverviewDto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/DataFake/FakeData.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/CarCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/CarCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/CarsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/CarsPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/models/CarCardDto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/models/car/CarCardDto.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +83,7 @@
     "git-widget-placeholder": "#1 on feature/DB",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/henriquemarques/Prog/CarExerciseSQL",
+    "last_opened_file_path": "/Users/henriquemarques/Prog/CarExerciseSQL/frontend/src/DataFake",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -94,6 +104,17 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/DataFake" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/DataFake" />
+      <recent name="$PROJECT_DIR$/frontend/src/DataFake/car" />
+      <recent name="$PROJECT_DIR$/frontend/src/models/user" />
+      <recent name="$PROJECT_DIR$/frontend/src/models/car" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -147,6 +168,8 @@
       <workItem from="1728641338205" duration="143000" />
       <workItem from="1728641679431" duration="8410000" />
       <workItem from="1728982270334" duration="6709000" />
+      <workItem from="1729051386527" duration="5697000" />
+      <workItem from="1729137630935" duration="5506000" />
     </task>
     <task id="LOCAL-00001" summary="SQL Migration">
       <option name="closed" value="true" />
@@ -164,7 +187,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728990325279</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add fake data">
+      <option name="closed" value="true" />
+      <created>1729070794737</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729070794737</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add cars page/card">
+      <option name="closed" value="true" />
+      <created>1729070821033</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729070821033</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +224,8 @@
     <MESSAGE value="add frontend and cars page+card" />
     <MESSAGE value="SQL Migration" />
     <MESSAGE value="add front end" />
-    <option name="LAST_COMMIT_MESSAGE" value="add front end" />
+    <MESSAGE value="add fake data" />
+    <MESSAGE value="add cars page/card" />
+    <option name="LAST_COMMIT_MESSAGE" value="add cars page/card" />
   </component>
 </project>

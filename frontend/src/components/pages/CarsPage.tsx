@@ -1,4 +1,4 @@
-import {carsFakeData} from "../../DataFake/FakeData.ts";
+import {carCardsFakeData} from "../../DataFake/FakeDataCar.ts";
 import {Stack} from "@mui/material";
 import CarCard from "../CarCard.tsx";
 
@@ -6,7 +6,7 @@ import CarCard from "../CarCard.tsx";
 export default function CarsPage() {
     return (
         <Stack>
-            {carsFakeData.map((car) => {
+            {carCardsFakeData.map((car) => {
                 return (
                     <CarCard key={car.id}
                                 car={car}
