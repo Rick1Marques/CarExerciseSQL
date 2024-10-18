@@ -5,7 +5,7 @@ type UserCardProps = {
 }
 
 export default function UserCard({user}: UserCardProps) {
-    const {id, username, profileImageUrl, usersCars} = user;
+    const { username, profileImageUrl, usersCars} = user;
 
     return (
         <div>

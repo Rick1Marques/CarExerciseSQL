@@ -1,4 +1,4 @@
-import {UserOwnerOverviewDto} from "./UserOwnerOverviewDto.ts";
+import {UserOwnerOverviewDto} from "../user/UserOwnerOverviewDto.ts";
 
 export type CarDetailsDto = {
     id: string,

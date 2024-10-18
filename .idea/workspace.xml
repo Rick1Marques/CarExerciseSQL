@@ -4,22 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c229154d-1605-48ed-8b31-31601c9f9435" name="Changes" comment="add cars page/card">
-      <change afterPath="$PROJECT_DIR$/frontend/src/DataFake/FakeDataCar.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/DataFake/FakeDataUser.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/UserCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/pages/CarDetailPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/pages/UsersPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/models/car/CarDetailsDto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/models/car/CarInfosUserListCardDto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/models/user/UserCardDto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/models/user/UserOwnerOverviewDto.ts" afterDir="false" />
+    <list default="true" id="c229154d-1605-48ed-8b31-31601c9f9435" name="Changes" comment="add User and change few things on Cars">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/controller/AppUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/controller/CarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/model/CarCardDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/model/CarDetailsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/model/CarInfosUserListCardDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/model/UserCardDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/model/UserOwnerOverviewDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/service/AppUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/service/CarService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/DataFake/FakeData.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/entites/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/entites/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/entites/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/entites/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/CarCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/CarCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/CarsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/CarsPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/models/CarCardDto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/models/car/CarCardDto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/UserCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/UserCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/CarDetailPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/CarDetailPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/models/car/CarDetailsDto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/models/car/CarDetailsDto.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +36,8 @@
         <option value="com.intellij.jpb.FlywayMigrationScript" />
         <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -68,42 +74,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.DockerDB.executor": "Run",
-    "Docker.backend/Dockerfile.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "Spring Boot.BackendApplication.executor": "Run",
-    "git-widget-placeholder": "#1 on feature/DB",
-    "jdk.selected.JAVA_MODULE": "21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/henriquemarques/Prog/CarExerciseSQL/frontend/src/DataFake",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "npm.npm install in frontend.executor": "Run",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/henriquemarques/Prog/CarExerciseSQL/frontend/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.DockerDB.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.backend/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BackendApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#1 on feature/DB&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/henriquemarques/Prog/CarExerciseSQL/frontend/src/DataFake&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.npm install in frontend.executor&quot;: &quot;Run&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/henriquemarques/Prog/CarExerciseSQL/frontend/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frontend/src/DataFake" />
@@ -121,6 +127,7 @@
         <option value="JavaScriptTestRunnerVitest" />
         <option value="SpringBootApplicationConfigurationType" />
         <option value="docker-deploy" />
+        <option value="js.build_tools.npm" />
       </set>
     </option>
   </component>
@@ -169,7 +176,8 @@
       <workItem from="1728641679431" duration="8410000" />
       <workItem from="1728982270334" duration="6709000" />
       <workItem from="1729051386527" duration="5697000" />
-      <workItem from="1729137630935" duration="5506000" />
+      <workItem from="1729137630935" duration="9057000" />
+      <workItem from="1729223815910" duration="4776000" />
     </task>
     <task id="LOCAL-00001" summary="SQL Migration">
       <option name="closed" value="true" />
@@ -203,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729070821033</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add User and change few things on Cars">
+      <option name="closed" value="true" />
+      <created>1729161480324</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729161480324</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +242,7 @@
     <MESSAGE value="add front end" />
     <MESSAGE value="add fake data" />
     <MESSAGE value="add cars page/card" />
-    <option name="LAST_COMMIT_MESSAGE" value="add cars page/card" />
+    <MESSAGE value="add User and change few things on Cars" />
+    <option name="LAST_COMMIT_MESSAGE" value="add User and change few things on Cars" />
   </component>
 </project>
