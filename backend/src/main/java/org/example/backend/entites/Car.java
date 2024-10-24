@@ -1,8 +1,12 @@
 package org.example.backend.entites;
 
 import jakarta.persistence.*;
+import lombok.Data;
+
+import java.math.BigDecimal;
 
 @Entity
+@Data
 public class Car {
 
     @Id
@@ -10,51 +14,58 @@ public class Car {
     private Long id;
 
     @Column(nullable = false)
+    private String category;
+
+    @Column(nullable = false)
     private String brand;
 
     @Column(nullable = false)
     private String model;
 
+    @Column(nullable = false)
+    private String year;
 
-    // @ManyToOne(cascade = CascadeType.ALL)
-    // TODO: search for the CascadeType
+    @Column(nullable = false)
+    private String mileage;
+
+    @Column(nullable = false)
+    private String transmission;
+
+    @Column(nullable = false)
+    private String power;
+
+    @Column(nullable = false)
+    private String fuelType;
+
+    @Column(nullable = false)
+    private BigDecimal price;
+
+    @Column(nullable = false)
+    private String imageUrl;
+
+    @Column(nullable = false)
+    private String description;
+
+    @Column(nullable = false)
+    private String fuelConsumption;
+
+    @Column(nullable = false)
+    private String numberOfDoors;
+
+    @Column(nullable = false)
+    private String numberOfSeats;
+
+    @Column(nullable = false)
+    private String airBags;
+
+    @Column(nullable = false)
+    private String numberOfPreviousOfOwners;
+
+    @Column(nullable = false)
+    private String color;
+
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
 
-    public Long getId() {
-        return id;
-    }
-
-    public Car setId(Long id) {
-        this.id = id;
-        return this;
-    }
-
-    public String getBrand() {
-        return brand;
-    }
-
-    public Car setBrand(String brand) {
-        this.brand = brand;
-        return this;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public Car setModel(String model) {
-        this.model = model;
-        return this;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public Car setUser(User user) {
-        this.user = user;
-        return this;
-    }
 }

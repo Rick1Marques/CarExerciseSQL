@@ -1,9 +1,9 @@
 package org.example.backend.entites;
 
 import jakarta.persistence.*;
-import java.util.ArrayList;
+
+import java.math.BigDecimal;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -15,10 +15,13 @@ public class User {
     private Long id;
 
     @Column(nullable = false)
-    private String fistName;
+    private BigDecimal credits;
 
     @Column(nullable = false)
-    private String lastName;
+    private String username;
+
+    @Column(nullable = false)
+    private String profileImageUrl;
 
     @OneToMany(mappedBy = "user")
     private Set<Car> cars = new HashSet<>();
@@ -32,21 +35,30 @@ public class User {
         return this;
     }
 
-    public String getFistName() {
-        return fistName;
+    public BigDecimal getCredits() {
+        return credits;
     }
 
-    public User setFistName(String fistName) {
-        this.fistName = fistName;
+    public User setCredits(BigDecimal credits) {
+        this.credits = credits;
         return this;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getUsername() {
+        return username;
     }
 
-    public User setLastName(String lastName) {
-        this.lastName = lastName;
+    public User setUsername(String username) {
+        this.username = username;
+        return this;
+    }
+
+    public String getProfileImageUrl() {
+        return profileImageUrl;
+    }
+
+    public User setProfileImageUrl(String profileImageUrl) {
+        this.profileImageUrl = profileImageUrl;
         return this;
     }
 

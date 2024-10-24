@@ -1,5 +1,5 @@
 import {carDetailsFakeData} from "../../DataFake/FakeDataCar.ts";
-import {Button, Stack} from "@mui/material";
+import {Stack} from "@mui/material";
 import {CarDetailsDto} from "../../models/car/CarDetailsDto.ts";
 
 export default function CarDetailPage() {
@@ -18,7 +18,6 @@ export default function CarDetailPage() {
                         <p>{car.owner.username}</p>
                         <img src={car.owner.profileImageUrl} alt="car" width="30px" height="30px"/>
                     </Stack>
-                    <Button>Buy</Button>
                 </Stack>
             </Stack>
             <p>Category: {car.category}</p>
