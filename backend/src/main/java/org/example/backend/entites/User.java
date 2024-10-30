@@ -23,7 +23,7 @@ public class User {
     @Column(nullable = false)
     private String profileImageUrl;
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
     private Set<Car> cars = new HashSet<>();
 
     public Long getId() {

@@ -4,28 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c229154d-1605-48ed-8b31-31601c9f9435" name="Changes" comment="add some Dtos and components to frontend">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/controller/AppUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/controller/CarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/model/CarCardDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/model/CarDetailsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/model/CarInfosUserListCardDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/model/UserCardDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/model/UserOwnerOverviewDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/service/AppUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/service/CarService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/db/migration/V2__add_new_properties.sql" afterDir="false" />
+    <list default="true" id="c229154d-1605-48ed-8b31-31601c9f9435" name="Changes" comment="getMethods back and front">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/model/NewCarInputsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/db/migration/V3__change_unit_of_prop.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/be18ac29-8fd3-42f5-bd14-ca814c824f89.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/be18ac29-8fd3-42f5-bd14-ca814c824f89.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/be18ac29-8fd3-42f5-bd14-ca814c824f89/storage_v2/_src_/database/test.kkQ2AA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/be18ac29-8fd3-42f5-bd14-ca814c824f89/storage_v2/_src_/database/test.kkQ2AA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/controller/AppUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/controller/AppUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/controller/CarController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/entites/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/entites/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/entites/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/entites/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/CarCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/CarCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/CarDetailPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/CarDetailPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/CarsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/CarsPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/UsersPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/UsersPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/repositories/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/repositories/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/service/AppUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/service/AppUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/service/CarService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +175,10 @@
       <workItem from="1729500384112" duration="598000" />
       <workItem from="1729533343251" duration="597000" />
       <workItem from="1729569762612" duration="4661000" />
-      <workItem from="1729742640342" duration="6048000" />
+      <workItem from="1729742640342" duration="6408000" />
+      <workItem from="1729829607316" duration="12701000" />
+      <workItem from="1730176559448" duration="593000" />
+      <workItem from="1730261580354" duration="1332000" />
     </task>
     <task id="LOCAL-00001" summary="SQL Migration">
       <option name="closed" value="true" />
@@ -234,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729236907938</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="getMethods back and front">
+      <option name="closed" value="true" />
+      <created>1729764761022</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729764761022</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,6 +261,7 @@
     <MESSAGE value="add cars page/card" />
     <MESSAGE value="add User and change few things on Cars" />
     <MESSAGE value="add some Dtos and components to frontend" />
-    <option name="LAST_COMMIT_MESSAGE" value="add some Dtos and components to frontend" />
+    <MESSAGE value="getMethods back and front" />
+    <option name="LAST_COMMIT_MESSAGE" value="getMethods back and front" />
   </component>
 </project>

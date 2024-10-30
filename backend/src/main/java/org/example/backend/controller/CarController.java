@@ -1,13 +1,12 @@
 package org.example.backend.controller;
 
 import lombok.RequiredArgsConstructor;
+import org.example.backend.entites.Car;
 import org.example.backend.model.CarCardDto;
 import org.example.backend.model.CarDetailsDto;
+import org.example.backend.model.NewCarInputsDto;
 import org.example.backend.service.CarService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -33,4 +32,18 @@ public class CarController {
         return carService.findCarCardById(id);
     }
 
+    @PostMapping
+    public Car postCarDetails(@RequestBody NewCarInputsDto newCarInputs){
+        return carService.addCar(newCarInputs);
+    }
+
+    @DeleteMapping("/{id}")
+    public String deleteCar(@PathVariable String id){
+        return carService.deleteCar(id);
+    }
+
+@PutMapping("/{id}")
+    public Car putCar(@PathVariable String id, @RequestBody NewCarInputsDto newCarInputs){
+        return carService.updateCar(id, newCarInputs);
+    }
 }
