@@ -1,12 +1,9 @@
-import {UserCardDto} from "../../models/user/UserCardDto.ts";
-import UserCard from "../UserCard.tsx";
 import {useEffect, useState} from "react";
+import {UserCardDto} from "../models/user/UserCardDto.ts";
 import axios from "axios";
 
-
-export default function UsersPage() {
+export function useFetchUsers() {
     const [users, setUsers] = useState<UserCardDto[]>([])
-
 
     useEffect(() => {
         async function fetchUsers() {
@@ -23,19 +20,6 @@ export default function UsersPage() {
         }
 
         fetchUsers()
-    }, []);
-
-
-
-
-    return (
-        <div>
-            {users.map((user) => {
-                return (
-                    <UserCard user={user} key={user.id}/>
-                )
-            }
-            )}
-        </div>
-    )
+    }, [])
+    return [users]
 }

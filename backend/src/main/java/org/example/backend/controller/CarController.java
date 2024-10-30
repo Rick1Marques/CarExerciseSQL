@@ -18,32 +18,27 @@ public class CarController {
     private final CarService carService;
 
     @GetMapping
-    public List<CarCardDto> getAllCars(){
+    public List<CarCardDto> getAllCars() {
         return carService.findAllCars();
     }
 
-    @GetMapping("/details/{id}")
-    public CarDetailsDto getCarDetails(@PathVariable String id){
+    @GetMapping("/{id}")
+    public CarDetailsDto getCarDetails(@PathVariable String id) {
         return carService.findCarDetailsById(id);
     }
 
-    @GetMapping("/card/{id}")
-    public CarCardDto getCarCard(@PathVariable String id){
-        return carService.findCarCardById(id);
-    }
-
     @PostMapping
-    public Car postCarDetails(@RequestBody NewCarInputsDto newCarInputs){
+    public Car postCarDetails(@RequestBody NewCarInputsDto newCarInputs) {
         return carService.addCar(newCarInputs);
     }
 
     @DeleteMapping("/{id}")
-    public String deleteCar(@PathVariable String id){
+    public String deleteCar(@PathVariable String id) {
         return carService.deleteCar(id);
     }
 
-@PutMapping("/{id}")
-    public Car putCar(@PathVariable String id, @RequestBody NewCarInputsDto newCarInputs){
+    @PutMapping("/{id}")
+    public Car putCar(@PathVariable String id, @RequestBody NewCarInputsDto newCarInputs) {
         return carService.updateCar(id, newCarInputs);
     }
 }

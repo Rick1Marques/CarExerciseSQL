@@ -68,22 +68,6 @@ public class CarService {
                 .orElseThrow(() -> new RuntimeException("Car not found"));
     }
 
-    public CarCardDto findCarCardById(String id) {
-        return carRepo.findById(Long.parseLong(id))
-                .map(car -> new CarCardDto(
-                        car.getId().toString(),
-                        car.getBrand(),
-                        car.getModel(),
-                        car.getYear(),
-                        car.getMileage(),
-                        car.getTransmission(),
-                        car.getPower(),
-                        car.getFuelType(),
-                        car.getPrice().toString(),
-                        car.getImageUrl()
-                ))
-                .orElseThrow(() -> new RuntimeException("Car not found"));
-    }
 
     public Car addCar(NewCarInputsDto newCarInputs) {
         User user = userRepo.findById(Long.parseLong(newCarInputs.ownerId()))

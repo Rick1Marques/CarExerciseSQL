@@ -1,10 +1,35 @@
-import {carDetailsFakeData} from "../../DataFake/FakeDataCar.ts";
 import {Stack} from "@mui/material";
 import {CarDetailsDto} from "../../models/car/CarDetailsDto.ts";
+import {useParams} from "react-router-dom";
+import {useEffect, useState} from "react";
+import axios from "axios"
 
 export default function CarDetailPage() {
+    const {id} = useParams();
 
-    const car: CarDetailsDto = carDetailsFakeData[0]
+    const [car, setCar] = useState<CarDetailsDto>()
+
+    useEffect(() => {
+        async function fetchCar() {
+            try {
+                const response = await axios.get(`/api/cars/${id}`)
+                if (response.status === 200) {
+                    const carData: CarDetailsDto = await response.data
+                    setCar(carData)
+                }
+            } catch (err) {
+                console.error(err)
+            }
+        }
+
+        fetchCar()
+    }, [id]);
+
+
+
+    if(!car) {
+        return <h1>Loading...</h1>
+    }
 
     return (
         <Stack>

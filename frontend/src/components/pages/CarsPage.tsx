@@ -3,6 +3,7 @@ import CarCard from "../CarCard.tsx";
 import axios from "axios";
 import {useEffect, useState} from "react";
 import {CarCardDto} from "../../models/car/CarCardDto.ts";
+import NewCarForm from "../NewCarForm.tsx";
 
 
 export default function CarsPage() {
@@ -27,10 +28,11 @@ export default function CarsPage() {
 
     return (
         <Stack>
+            <NewCarForm/>
             {cars.length === 0 && <h1>No cars on DB...</h1>}
             {cars.map((car) => {
                 return (
-                    <CarCard key={car.id} id={car.id}
+                    <CarCard key={car.id} car={car}
                     />
                 )
             })}

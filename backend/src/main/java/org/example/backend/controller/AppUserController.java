@@ -25,4 +25,5 @@ public class AppUserController {
     public User postUser(@RequestBody UserOwnerOverviewDto newUser){
         return appUserService.addUser(newUser);
     }
+
 }
