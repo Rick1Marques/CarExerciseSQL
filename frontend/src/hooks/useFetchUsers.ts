@@ -4,6 +4,8 @@ import axios from "axios";
 
 export function useFetchUsers() {
     const [users, setUsers] = useState<UserCardDto[]>([])
+    const [loading, setLoading] = useState<boolean>(true)
+
 
     useEffect(() => {
         async function fetchUsers() {
@@ -12,8 +14,8 @@ export function useFetchUsers() {
                 if (response.status === 200) {
                     const usersData: UserCardDto[] = await response.data
                     setUsers(usersData)
+                    setLoading(false)
                 }
-                setUsers(users)
             } catch (err) {
                 console.error(err)
             }
@@ -21,5 +23,5 @@ export function useFetchUsers() {
 
         fetchUsers()
     }, [])
-    return [users]
+    return {users, loading}
 }

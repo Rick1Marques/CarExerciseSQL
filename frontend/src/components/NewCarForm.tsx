@@ -16,7 +16,7 @@ export default function NewCarForm() {
     const [open, setOpen] = React.useState(false);
     const [newCarInputs, setNewCarInputs] = useState<NewCarInputsDto>()
     const [ownerIdInput, setOwnerIdInput] = useState<string>("")
-    const [users] = useFetchUsers()
+    const {users} = useFetchUsers()
 
     useEffect(() => {
         async function postCars() {
@@ -24,6 +24,7 @@ export default function NewCarForm() {
                 const response = await axios.post(`/api/cars`, newCarInputs)
                 if (response.status === 200) {
                     console.log("Car added")
+                    window.location.reload();
                 }
             } catch (err) {
                 console.error(err)

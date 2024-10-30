@@ -4,22 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c229154d-1605-48ed-8b31-31601c9f9435" name="Changes" comment="delete and put method">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/NewCarForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/hooks/useFetchUsers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/models/car/NewCarInputsDto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/be18ac29-8fd3-42f5-bd14-ca814c824f89.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/be18ac29-8fd3-42f5-bd14-ca814c824f89.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/be18ac29-8fd3-42f5-bd14-ca814c824f89/storage_v2/_src_/database/test.kkQ2AA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/be18ac29-8fd3-42f5-bd14-ca814c824f89/storage_v2/_src_/database/test.kkQ2AA/schema/public.abK9xQ.meta" afterDir="false" />
+    <list default="true" id="c229154d-1605-48ed-8b31-31601c9f9435" name="Changes" comment="frontend NewCarForm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/controller/AppUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/controller/AppUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/controller/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/service/CarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/DataFake/FakeDataCar.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/DataFake/FakeDataUser.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/CarCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/CarCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/CarDetailPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/CarDetailPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/CarsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/CarsPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/NewCarForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/NewCarForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/UsersPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/UsersPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/hooks/useFetchUsers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/hooks/useFetchUsers.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +172,7 @@
       <workItem from="1729742640342" duration="6408000" />
       <workItem from="1729829607316" duration="12701000" />
       <workItem from="1730176559448" duration="593000" />
-      <workItem from="1730261580354" duration="10817000" />
+      <workItem from="1730261580354" duration="12624000" />
     </task>
     <task id="LOCAL-00001" summary="SQL Migration">
       <option name="closed" value="true" />
@@ -247,7 +238,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730293296620</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="frontend NewCarForm">
+      <option name="closed" value="true" />
+      <created>1730304545278</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1730304545278</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +273,7 @@
     <MESSAGE value="add some Dtos and components to frontend" />
     <MESSAGE value="getMethods back and front" />
     <MESSAGE value="delete and put method" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete and put method" />
+    <MESSAGE value="frontend NewCarForm" />
+    <option name="LAST_COMMIT_MESSAGE" value="frontend NewCarForm" />
   </component>
 </project>

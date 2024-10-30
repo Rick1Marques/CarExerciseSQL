@@ -1,7 +1,7 @@
 import {Box, Button, Stack} from "@mui/material";
 import {useNavigate} from "react-router-dom";
 import {CarCardDto} from "../models/car/CarCardDto.ts";
-
+import axios from "axios";
 
 type CarCardProps = {
     car: CarCardDto
@@ -10,8 +10,20 @@ type CarCardProps = {
 export default function CarCard({car}: CarCardProps) {
     const navigate = useNavigate()
 
-    function handleClick() {
+    function handleDetails() {
         navigate(`/cars/${car.id}`)
+    }
+
+    async function handleDelete() {
+        try {
+            const response = await axios.delete(`/api/cars/${car.id}`)
+            if (response.status === 200) {
+                console.log("Car deleted")
+                window.location.reload();
+            }
+        } catch (err) {
+            console.error(err)
+        }
     }
 
     return (
@@ -30,7 +42,8 @@ export default function CarCard({car}: CarCardProps) {
                     <p>Price: {car!.price} €</p>
                 </Stack>
             </Stack>
-            <Button onClick={handleClick}>Details</Button>
+            <Button onClick={handleDetails}>Details</Button>
+            <Button onClick={handleDelete}>Delete</Button>
         </>
     )
 }
