@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c229154d-1605-48ed-8b31-31601c9f9435" name="Changes" comment="frontend delete">
+    <list default="true" id="c229154d-1605-48ed-8b31-31601c9f9435" name="Changes" comment="frontend car put">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/CarCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/CarCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/NewCarForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/CarForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/CarsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/CarsPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/models/car/CarCardDto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/models/car/CarCardDto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/CarForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/CarForm.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +169,7 @@
       <workItem from="1729829607316" duration="12701000" />
       <workItem from="1730176559448" duration="593000" />
       <workItem from="1730261580354" duration="16117000" />
-      <workItem from="1730348534563" duration="4509000" />
+      <workItem from="1730348534563" duration="9026000" />
     </task>
     <task id="LOCAL-00001" summary="SQL Migration">
       <option name="closed" value="true" />
@@ -254,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730306356628</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="frontend delete">
+      <option name="closed" value="true" />
+      <created>1730353439440</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1730353439440</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +287,8 @@
     <MESSAGE value="getMethods back and front" />
     <MESSAGE value="delete and put method" />
     <MESSAGE value="frontend NewCarForm" />
-    <MESSAGE value="frontend delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="frontend delete" />
+    <MESSAGE value="frontend car put" />
+    <MESSAGE value="frontend car put" />
+    <option name="LAST_COMMIT_MESSAGE" value="frontend car put" />
   </component>
 </project>
