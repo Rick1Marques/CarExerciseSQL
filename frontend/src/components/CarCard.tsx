@@ -2,6 +2,7 @@ import {Box, Button, Stack} from "@mui/material";
 import {useNavigate} from "react-router-dom";
 import {CarCardDto} from "../models/car/CarCardDto.ts";
 import axios from "axios";
+import CarForm from "./CarForm.tsx";
 
 type CarCardProps = {
     car: CarCardDto
@@ -44,6 +45,7 @@ export default function CarCard({car}: CarCardProps) {
             </Stack>
             <Button onClick={handleDetails}>Details</Button>
             <Button onClick={handleDelete}>Delete</Button>
+            <CarForm edit={true} carId={car.id} ownerId={car.ownerId}/>
         </>
     )
 }

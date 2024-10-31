@@ -8,5 +8,6 @@ export type CarCardDto = {
     power: string,
     fuelType: string,
     price: string,
-    imageUrl: string
+    imageUrl: string,
+    ownerId: string
 }
