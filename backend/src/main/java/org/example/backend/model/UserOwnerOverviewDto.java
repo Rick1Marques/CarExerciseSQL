@@ -1,7 +1,8 @@
 package org.example.backend.model;
 
 public record UserOwnerOverviewDto(
-        String username,
+        String firstName,
+        String lastName,
         String profileImageUrl
 ) {
 }

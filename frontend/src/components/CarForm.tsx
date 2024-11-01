@@ -61,7 +61,7 @@ export default function CarForm({edit, carId, ownerId}: CarFormProps) {
             const response = await axios.post(`/api/cars`, newCarInputs)
             if (response.status === 200) {
                 console.log("Car added")
-                // window.location.reload();
+                window.location.reload();
             }
         } catch (err) {
             console.error(err)
@@ -73,7 +73,7 @@ export default function CarForm({edit, carId, ownerId}: CarFormProps) {
             const response = await axios.put(`/api/cars/${carId}`, newCarInputs)
             if (response.status === 200) {
                 console.log("Car updated")
-                // window.location.reload();
+                window.location.reload();
             }
         } catch (err) {
             console.error(err)

@@ -22,14 +22,14 @@ public class AppUserService {
         return userRepo.findAll().stream()
                 .map(user -> new UserCardDto(
                         user.getId().toString(),
-                        user.getUsername(),
+                        user.getFirstName() + " " + user.getLastName(),
                         user.getProfileImageUrl(),
                         user.getCars().stream()
                                 .map(car -> new CarInfosUserListCardDto(
                                         car.getId().toString(),
                                         car.getBrand(),
                                         car.getModel(),
-                                        car.getYear(),
+                                        car.getYear(),K
                                         car.getFuelType()
                                 ))
                                 .toList()
@@ -39,7 +39,8 @@ public class AppUserService {
 
     public User addUser(UserOwnerOverviewDto newUser) {
         User user = new User()
-                .setUsername(newUser.username())
+                .setFirstName(newUser.firstName())
+                .setLastName(newUser.lastName())
                 .setProfileImageUrl(newUser.profileImageUrl())
                 .setCredits(new BigDecimal(0))
                 .setCars(Set.of());
