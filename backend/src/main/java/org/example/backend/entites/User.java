@@ -17,8 +17,11 @@ public class User {
     @Column(nullable = false)
     private BigDecimal credits;
 
+    @Column
+    private String firstName;
+
     @Column(nullable = false)
-    private String username;
+    private String lastName;
 
     @Column(nullable = false)
     private String profileImageUrl;
@@ -44,12 +47,21 @@ public class User {
         return this;
     }
 
-    public String getUsername() {
-        return username;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public User setUsername(String username) {
-        this.username = username;
+    public User setFirstName(String firstName) {
+        this.firstName = firstName;
+        return this;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public User setLastName(String lastName) {
+        this.lastName = lastName;
         return this;
     }
 

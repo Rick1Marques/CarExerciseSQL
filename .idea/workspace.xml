@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c229154d-1605-48ed-8b31-31601c9f9435" name="Changes" comment="frontend car put">
+    <list default="true" id="c229154d-1605-48ed-8b31-31601c9f9435" name="Changes" comment="frontend put car">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/CarForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/CarForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/entites/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/entites/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/model/UserOwnerOverviewDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/model/UserOwnerOverviewDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/service/AppUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/example/backend/service/AppUserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +171,7 @@
       <workItem from="1729829607316" duration="12701000" />
       <workItem from="1730176559448" duration="593000" />
       <workItem from="1730261580354" duration="16117000" />
-      <workItem from="1730348534563" duration="9026000" />
+      <workItem from="1730348534563" duration="12708000" />
     </task>
     <task id="LOCAL-00001" summary="SQL Migration">
       <option name="closed" value="true" />
@@ -259,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730353439440</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="frontend put car">
+      <option name="closed" value="true" />
+      <created>1730376527181</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1730376527181</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,6 +299,7 @@
     <MESSAGE value="frontend NewCarForm" />
     <MESSAGE value="frontend car put" />
     <MESSAGE value="frontend car put" />
-    <option name="LAST_COMMIT_MESSAGE" value="frontend car put" />
+    <MESSAGE value="frontend put car" />
+    <option name="LAST_COMMIT_MESSAGE" value="frontend put car" />
   </component>
 </project>
